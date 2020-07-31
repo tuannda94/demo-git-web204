@@ -1,0 +1,9 @@
+Tạo nhánh mới với công việc tương tự bên add user
+
+---------
+Đây là phần thay đổi sau lần commit đầu tiên
+Phần thay đổi này sẽ phải sử dụng
+    git add .
+    git commit --amend --no-edit
+để gộp phần thay đổi vào commit vừa thực hiện trước đó
+    git push tên_remote tên_nhánh -f
