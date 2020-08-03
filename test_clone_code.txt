@@ -1,0 +1,2 @@
+- Thầy sẽ đẩy code mới vào nhánh develop của thầy
+- Sau đó sinh viên sẽ thực hiện: git pull origin develop
