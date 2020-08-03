@@ -1,0 +1,21 @@
+- Làm việc nhóm trên git
+    + Có 1 người trong team tạo ra 1 repository
+        VD: https://github.com/tuannda94/demo-git-web204/tree/develop
+    + Các thành viên khác thực hiện công việc FORK
+        Click nút Fork ở góc phải repository
+    + Clone code repository đó về máy tính
+        git clone đường_dẫn_khi_mở_nút_clone tên_thư_mục_clone_về
+
+    + Định nghĩa remote nguồn để kéo code mới nhất về
+        git remote add tuan https://github.com/tuannda94/demo-git-web204.git
+        (Thực hiện kiểm tra lại bằng câu lệnh "git remote -v" sẽ có 2 remote )
+    + Sang nhánh làm việc chính (develop) và pull code mới nhất từ nhánh làm việc của remote nguồn về
+        git pull tên_remote_nguồn develop
+
+    KHI ĐẨY CODE LÊN SẼ ĐẨY LÊN REMOTE CÁ NHÂN, KHI PULL CODE VỀ SẼ PULL TỪ REMOTE NGUỒN
+
+    + Bắt đầu làm việc như bình thường:
+        git checkout -b 03_08_HO_TEN
+        "git status" -> có file thay đổi màu đỏ -> "git add ." -> có file chờ commit màu xanh
+        git commit -m "HO TEN - COMMIT AFTER CLONE"
+        "git push origin HEAD" hoặc tên nhánh
