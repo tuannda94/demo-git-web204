@@ -1,0 +1,15 @@
+Xoá remote và thêm mới remote
+
+- git remote remove origin
+- git remote add origin https://github.com/ducduc2000/demo-git-web204.git
+
+
+- Vấn đề conflict xảy ra khi 2 người thay đổi nội dung của cùng file,
+    mà có 1 người trong đó vừa được merge code vào
+    -> người còn lại chưa có code mới nhất của người kia -> nó đang hiểu thay đổi cùng file
+
+    ->>>>>> pull code mới nhất có code của người vừa đc merge về nhánh chính (develop)
+            "git rebase develop" -> gặp conflict -> lựa chọn giữ code của 1 trong 2 người hoặc cả 2
+            "git add ." -> lưu những phần vừa thay đổi
+            "git rebase --continue" -> hoàn tất phần thay đổi code mới vào commit
+            "git push web204 HEAD -f" -> push code lên
