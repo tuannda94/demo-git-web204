@@ -1,0 +1,15 @@
+Content ngày 07/08/2020
+
+- luôn làm việc từ nhánh develop
+- luôn update nhánh develop ở local mới nhất so với develop trên github nguồn
+- Khi làm việc luôn checkout sang nhánh mới từ develop
+- Sau khi thực hiện chức năng trên nhánh mới sẽ sử dụng
+    git add .
+    git commit -m "Tên commit"
+
+- Thực hiện push lên remote cá nhân
+    git push origin tên nhánh
+    hoặc git push origin HEAD
+
+- Thực hiện tạo pull request trên github bằng cách
+    so sánh code nhánh mới ở github cá nhân -> nhánh develop github nguồn
